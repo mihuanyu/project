@@ -44,7 +44,7 @@ public class VideosAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         ItemData.DataBeanX.DataBean dataBean = list.get(position);
         ViewHolder holder1 = (ViewHolder) holder;
-        holder1.name.setText(dataBean.getTitle());
+        holder1.title.setText(dataBean.getTitle());
         holder1.name.setText(dataBean.getSubtitle());
         Glide.with(context).load(dataBean.getScene_pic_url()).into(holder1.zhuantiImg);
     }
